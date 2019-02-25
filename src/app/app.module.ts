@@ -12,12 +12,18 @@ import { AppRoutingModule } from './app-routing.module';
 // storage
 import { IonicStorageModule } from '@ionic/storage';
 
+// CashFlowModal
+import { CashFlowModalPageModule } from './pages/cash-flow-modal/cash-flow-modal.module';
+import { FilterPopoverPageModule } from './pages/filter-popover/filter-popover.module';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, 
             IonicModule.forRoot(), 
             AppRoutingModule, 
+            CashFlowModalPageModule,
+            FilterPopoverPageModule,
             IonicStorageModule.forRoot()],
   providers: [
     StatusBar,

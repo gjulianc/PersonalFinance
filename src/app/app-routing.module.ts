@@ -17,6 +17,8 @@ const routes: Routes = [
     path: '', 
     redirectTo: 'menu/tracker', 
     pathMatch: 'full' },
+  { path: 'cash-flow-modal', loadChildren: './pages/cash-flow-modal/cash-flow-modal.module#CashFlowModalPageModule' },
+  { path: 'filter-popover', loadChildren: './pages/filter-popover/filter-popover.module#FilterPopoverPageModule' },
   
   
   
